@@ -1,0 +1,163 @@
+dev@lab:~/Playground/coinvesting-core-ropsten$ truffle migrate --network ropsten
+
+Compiling your contracts...
+===========================
+✔ Fetching solc version list from solc-bin. Attempt #1
+> Compiling ./contracts/CoinvestingDeFiToken.sol
+> Compiling ./contracts/CoinvestingDeFiTokenSale.sol
+> Compiling ./contracts/ERC20.sol
+> Compiling ./contracts/Migrations.sol
+> Compiling ./contracts/MultiSigWallet.sol
+> Compiling ./contracts/interfaces/IERC20.sol
+> Compiling ./contracts/libraries/Address.sol
+> Compiling ./contracts/libraries/SafeERC20.sol
+> Compiling ./contracts/utils/Context.sol
+> Compiling ./contracts/utils/Ownable.sol
+> Compiling ./contracts/utils/ReentrancyGuard.sol
+✔ Fetching solc version list from solc-bin. Attempt #1
+> Artifacts written to /home/dev/Playground/coinvesting-core-ropsten/src/abis
+> Compiled successfully using:
+   - solc: 0.8.3+commit.8d00100c.Emscripten.clang
+
+
+
+Starting migrations...
+======================
+> Network name:    'ropsten'
+> Network id:      3
+> Block gas limit: 8000000 (0x7a1200)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0xe762d5dce8eb5ec02e148d384a4e8f2ed0903fc8b276ea63ac60edc7399a12ab
+   > Blocks: 2            Seconds: 14
+   > contract address:    0x07C3CBd823e0DdE71548aF0D2b9a8D31736c84B7
+   > block number:        10009271
+   > block timestamp:     1618039140
+   > account:             0x62efAd375aE21637F38FBa5F6B9F0fC55cc2232f
+   > balance:             2.999031067713170107
+   > gas used:            248204 (0x3c98c)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00496408 ETH
+
+   Pausing for 1 confirmations...
+   ------------------------------
+   > confirmation number: 1 (block: 10009272)
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00496408 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Deploying 'CoinvestingDeFiTokenSale'
+   ------------------------------------
+   > transaction hash:    0xe2fb823588b245a818b7e286854652d50ed8efb2fa7d39e0ca43281b528e00dd
+   > Blocks: 2            Seconds: 82
+   > contract address:    0xb7f06B778F5B5a100357Eda3FE9d341512BC720c
+   > block number:        10009277
+   > block timestamp:     1618039227
+   > account:             0x62efAd375aE21637F38FBa5F6B9F0fC55cc2232f
+   > balance:             2.949077907713170107
+   > gas used:            2451745 (0x256921)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0490349 ETH
+
+   Pausing for 1 confirmations...
+   ------------------------------
+   > confirmation number: 1 (block: 10009278)
+
+   Deploying 'MultiSigWallet'
+   --------------------------
+   > transaction hash:    0x7061ad0261ff4d6a96111d8d6a739084bb3d4a6d49f0b3b4fc95fd39bd30adfe
+   > Blocks: 2            Seconds: 14
+   > contract address:    0x1f1D30cdD0d488cDA3957B378d67595b07ca7C7f
+   > block number:        10009279
+   > block timestamp:     1618039295
+   > account:             0x62efAd375aE21637F38FBa5F6B9F0fC55cc2232f
+   > balance:             2.899865947713170107
+   > gas used:            2460598 (0x258bb6)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.04921196 ETH
+
+   Pausing for 1 confirmations...
+   ------------------------------
+   > confirmation number: 2 (block: 10009284)
+
+   Replacing 'MultiSigWallet'
+   --------------------------
+   > transaction hash:    0xc354db60f13fd19bdb16cd9002c3e9b3df1c5808b9ec6f567f953d586da579a5
+   > Blocks: 2            Seconds: 42
+   > contract address:    0x2C59b863e02f2102879798e26930377dB03d475c
+   > block number:        10009287
+   > block timestamp:     1618039392
+   > account:             0x62efAd375aE21637F38FBa5F6B9F0fC55cc2232f
+   > balance:             2.850653987713170107
+   > gas used:            2460598 (0x258bb6)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.04921196 ETH
+
+   Pausing for 1 confirmations...
+   ------------------------------
+   > confirmation number: 1 (block: 10009288)
+
+   Replacing 'MultiSigWallet'
+   --------------------------
+   > transaction hash:    0x5101f5dc4f994393b1564827418dc47b83646413bbde53abc8be3d0dd9fe2ccf
+   > Blocks: 1            Seconds: 10
+   > contract address:    0x5123a03024e866DB3731Bc40b14C532B1a62Ae37
+   > block number:        10009289
+   > block timestamp:     1618039432
+   > account:             0x62efAd375aE21637F38FBa5F6B9F0fC55cc2232f
+   > balance:             2.801442027713170107
+   > gas used:            2460598 (0x258bb6)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.04921196 ETH
+
+   Pausing for 1 confirmations...
+   ------------------------------
+   > confirmation number: 1 (block: 10009290)
+
+   Deploying 'CoinvestingDeFiToken'
+   --------------------------------
+   > transaction hash:    0x55b85f22c7cec55c8a08c40e88fd1f80bf1795eb15192c2ceb6270c97d128725
+   > Blocks: 2            Seconds: 22
+   > contract address:    0xe3426Dd0BCd93946790B305C039c8088eCEC6Ffc
+   > block number:        10009294
+   > block timestamp:     1618039492
+   > account:             0x62efAd375aE21637F38FBa5F6B9F0fC55cc2232f
+   > balance:             2.757160767713170107
+   > gas used:            2214063 (0x21c8af)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.04428126 ETH
+
+   Pausing for 1 confirmations...
+   ------------------------------
+   > confirmation number: 1 (block: 10009295)
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.24095204 ETH
+
+
+Summary
+=======
+> Total deployments:   6
+> Final cost:          0.24591612 ETH
+
+
+dev@lab:~/Playground/coinvesting-core-ropsten$ 
